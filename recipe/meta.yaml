@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-cncf-kubernetes" %}
-{% set version = "5.2.2" %}
+{% set version = "5.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-cncf-kubernetes-{{ version }}.tar.gz
-  sha256: f49671348efba384389a3f5380c67c617e6a5b5e9e5f0dc89902a1a0d205d1e6
+  sha256: b0b918d35a032ab02807b2b9b358122a4aaf5c5e16809825d2717783df5e1b2e
 
 build:
   noarch: python
