@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cncf_kubernetes-{{ version }}.tar.gz
   sha256: cc295c2e53f823e647352bb32eb8e55ac406a46fe2f0a07e477991d7d065578b
 
 build:
@@ -16,8 +16,8 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=67.2.0,<68.0.0
+    - python >=3.8,<4.dev0
+    - flit-core >=3.2,<4
     - pip
   run:
     - python >=3.8
@@ -31,8 +31,7 @@ requirements:
 
 test:
   imports:
-    - airflow.providers.cncf.kubernetes
-    - airflow.providers.cncf.kubernetes.backcompat
+    - apache_airflow_providers_cncf_kubernetes
   commands:
     - pip check
   requires:
@@ -40,11 +39,9 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Apache Airflow. Implements apache-airflow-providers-cncf-kubernetes package
+  summary: Provider package apache-airflow-providers-cncf-kubernetes for Apache Airflow
   license: Apache-2.0
-  license_file:
-    - LICENSE
-    - NOTICE
+  license_file: airflow/providers/cncf/kubernetes/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/index.html
   dev_url: https://github.com/apache/airflow/
