@@ -31,7 +31,7 @@ requirements:
 
 test:
   imports:
-    - apache_airflow_providers_cncf_kubernetes
+    - airflow.providers.cncf.kubernetes
   commands:
     - pip check
   requires:
