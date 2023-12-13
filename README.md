@@ -7,7 +7,7 @@ Home: https://airflow.apache.org/
 
 Package license: Apache-2.0
 
-Summary: Provider for Apache Airflow. Implements apache-airflow-providers-cncf-kubernetes package
+Summary: Provider package apache-airflow-providers-cncf-kubernetes for Apache Airflow
 
 Development: https://github.com/apache/airflow/
 
