@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cncf_kubernetes-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_cncf_kubernetes-{{ version }}.tar.gz
   sha256: eb34bea6743942bfbb290b306f06de8d69bcd10c3f76f19132606758b44d7489
 
 build:
