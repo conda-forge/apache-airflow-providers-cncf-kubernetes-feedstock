@@ -25,9 +25,9 @@ requirements:
     - apache-airflow >=2.9.0
     - asgiref >=3.5.2
     - cryptography >=41.0.0
-    - google-re2 >=1.0
     - python-kubernetes >=29.0.0,<=31.0.0
     - kubernetes_asyncio >=29.0.0,<=31.0.0
+    - google-re2 >=1.0
 
 test:
   imports:
@@ -42,7 +42,7 @@ about:
   home: https://airflow.apache.org/
   summary: Provider package apache-airflow-providers-cncf-kubernetes for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/cncf/kubernetes/LICENSE
+  license_file: src/airflow/providers/cncf/kubernetes/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/index.html
   dev_url: https://github.com/apache/airflow/
