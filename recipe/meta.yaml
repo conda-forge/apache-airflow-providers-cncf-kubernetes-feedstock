@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }}
@@ -27,7 +27,6 @@ requirements:
     - cryptography >=41.0.0
     - python-kubernetes >=29.0.0,<=31.0.0
     - kubernetes_asyncio >=29.0.0,<=31.0.0
-    - google-re2 >=1.0
 
 test:
   imports:
