@@ -21,10 +21,10 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - aiofiles >=23.2.0
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - asgiref >=3.5.2
     - cryptography >=41.0.0
     - python-kubernetes >=32.0.0,<34.0.0
