@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-cncf-kubernetes" %}
 {% set version = "10.10.0" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +26,7 @@ requirements:
     - apache-airflow-providers-common-compat >=1.8.0
     - asgiref >=3.5.2
     - cryptography >=41.0.0,<46.0.0
-    - python-kubernetes >=32.0.0,<35.0.0
+    - kubernetes >=32.0.0,<35.0.0
     - kubernetes_asyncio >=32.0.0,<35.0.0
 
 test:
@@ -40,10 +39,12 @@ test:
     - pip
 
 about:
-  home: https://airflow.apache.org/
+  home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-cncf-kubernetes for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/cncf/kubernetes/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/index.html
   dev_url: https://github.com/apache/airflow/
