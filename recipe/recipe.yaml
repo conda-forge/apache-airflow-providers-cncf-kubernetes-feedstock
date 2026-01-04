@@ -34,7 +34,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.cncf.kubernetes
+      - airflow.providers.cncf.kubernetes
       pip_check: true
       python_version: ${{ python_min }}.*
 
