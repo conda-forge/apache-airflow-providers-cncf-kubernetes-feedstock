@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-cncf-kubernetes
-  version: 10.12.3
+  version: "10.12.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_cncf_kubernetes-${{ version }}.tar.gz
-  sha256: 7dd981c676c360a0c2afc5cdf45259e0a19b3682851671b1060bbe5fd001a931
+  sha256: b075a295a307db0aec086bf3581271fc64325c4d64f94a9b6bfc5d054bd0025d
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - python-kubernetes >=35.0.0,<36.0.0
     - urllib3 >=2.1.0,!=2.6.0
     - kubernetes_asyncio >=32.0.0,<35.0.0
+
 tests:
   - python:
       imports:
