@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-cncf-kubernetes
-  version: 10.16.1
+  version: "10.16.1"
 
 package:
   name: ${{ name|lower }}
@@ -25,11 +25,13 @@ requirements:
     - aiofiles >=23.2.0
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.14.1
-    - asgiref >=3.5.2
+    # more restrictive for python >=3.14
+    - asgiref >=3.11.1
     - cryptography >=44.0.3
     - python-kubernetes >=35.0.0,<36.0.0
     - urllib3 >=2.1.0,!=2.6.0
     - kubernetes_asyncio >=32.0.0,<36.0.0
+
 tests:
   - python:
       imports:
@@ -37,7 +39,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - '*'
+        - "*"
 
 about:
   homepage: https://github.com/apache/airflow/
